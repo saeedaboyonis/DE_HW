@@ -40,13 +40,10 @@ For example, in `modify_file_branch1`:
 
 ```python
 def modify_file_branch1(**kwargs):
-    ti = kwargs['ti']
-    data = ti.xcom_pull(task_ids='fetch_json')
+....
     # Modify data as needed for branch1
     data['modified'] = 'branch1_modification'
-    # Save the modified data back to a file
-    with open('/path/to/modified_file_branch1.json', 'w') as f:
-        json.dump(data, f)
+....  
 ```
 
 
@@ -59,6 +56,7 @@ Use the `LocalFilesystemToGCSOperator` to upload the modified JSON file back to 
 Implement error handling and logging in each step using try-except blocks and the `Airflow logging` module. Use Airflow's built-in monitoring tools to monitor the DAG execution.
 
 Example JSON Schema
+```
 {
   "type": "object",
   "properties": {
@@ -69,8 +67,10 @@ Example JSON Schema
   },
   "required": ["id", "name", "flag", "data"]
 }
+```
 
 Sample JSON Data
+```
 {
   "id": 123,
   "name": "Sample Name",
@@ -80,6 +80,7 @@ Sample JSON Data
     {"key2": "value2"}
   ]
 }
+```
 
 Environment Setup Guide
 1. Install Python 3.7 - https://www.python.org/downloads/release/python-370/
