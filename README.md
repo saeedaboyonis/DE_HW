@@ -81,6 +81,16 @@ Sample JSON Data
 }
 ```
 
+#### Input
+The workflow should be triggered by REST API POST request 
+https://airflow.apache.org/docs/apache-airflow/stable/stable-rest-api-ref.html
+Example of POST request using curl:
+```
+> curl -X POST 'http://localhost:8080/api/v1/dags/<dag_id>/dagRuns' \
+   	-H 'Content-Type: application/json' \
+--user "airflow:airflow"
+```
+
 Environment Setup Guide
 1. Install Python 3.7 - https://www.python.org/downloads/release/python-370/
 2. Python IDE of your choice (PyCharm is recommended https://www.jetbrains.com/pycharm/download/)
