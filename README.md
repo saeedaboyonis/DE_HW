@@ -19,7 +19,7 @@ Requirements
 
 Detailed Steps
 ### Step 1: Fetch JSON File from GCP Bucket
-Use the `GoogleCloudStorageToLocalOperator` to download the JSON file from a specified GCP bucket to the local filesystem.
+Use the `GCSToLocalFilesystemOperator` to download the JSON file from a specified GCP bucket to the local filesystem.
 
 ### Step 2: Validate JSON Schema
 Use the `PythonOperator` to validate the JSON file against a predefined schema. If the schema validation fails, the DAG should stop and log the error.
