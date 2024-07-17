@@ -95,9 +95,18 @@ Example of POST request using curl:
 {"execution_date":"2020-11-11T18:45:05+00:00","message":"Created <DagRun test_dag @ 2020-11-11 18:45:05+00:00: manual__2020-11-11T18:45:05+00:00, externally triggered: True>"}
 ```
 
-Environment Setup Guide
+
+### Required Deliverables
+
+1. Code implementing the algorithm you developed, in a programming language of your choice. on this repository, in the `src` directory (open a PR for submission). The code should be well-documented and easy to read, and should include instructions for running the code.
+
+2. A document describing the assumptions, approach, and results (including intermediate results of your choice):
+   - Please dedicate no more than one page to describing the assumptions and solution approach.
+
+   
+#### Environment Setup Guide
 1. Install Python 3.7 - https://www.python.org/downloads/release/python-370/
-2. Python IDE of your choice (PyCharm is recommended https://www.jetbrains.com/pycharm/download/)
+2. Python IDE of your choice (VS code is recommended https://code.visualstudio.com/download)
 3. Install Docker Engine - https://docs.docker.com/desktop/
 4. Install REST API tool of your choice (POSTMAN is recommended https://www.postman.com/downloads)
 5. Follow this guide to initialize a local airflow instance: https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#running-airflow-in-docker
@@ -105,6 +114,6 @@ Environment Setup Guide
 7. Go to http://localhost:8080/. You should be able to access the Airflow web application.
 
 
-References:
+#### References
 Apache Airflow - https://airflow.apache.org/docs/apache-airflow/2.5.1/tutorial/index.html
 Docker logs for basic debugging -  https://docs.docker.com/config/containers/logging/
