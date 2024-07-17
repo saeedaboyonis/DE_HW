@@ -82,13 +82,17 @@ Sample JSON Data
 ```
 
 #### Input
-The workflow should be triggered by REST API POST request 
+1. The workflow should be triggered by REST API POST request 
 https://airflow.apache.org/docs/apache-airflow/stable/stable-rest-api-ref.html
 Example of POST request using curl:
 ```
 > curl -X POST 'http://localhost:8080/api/v1/dags/<dag_id>/dagRuns' \
    	-H 'Content-Type: application/json' \
 --user "airflow:airflow"
+```
+2. Example of successful response:
+```
+{"execution_date":"2020-11-11T18:45:05+00:00","message":"Created <DagRun test_dag @ 2020-11-11 18:45:05+00:00: manual__2020-11-11T18:45:05+00:00, externally triggered: True>"}
 ```
 
 Environment Setup Guide
