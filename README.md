@@ -16,7 +16,7 @@ Create an Airflow DAG to fetch a JSON file from a GCP bucket, process it based o
 7. Upload the modified file back to the GCP bucket.
 8. Include error handling, logging, and monitoring mechanisms.
 
-Detailed Steps
+#### Detailed Steps
 ### Step 1: Fetch JSON File from GCP Bucket
 Use the `GCSToLocalFilesystemOperator` to download the JSON file from a specified GCP bucket to the local filesystem.
 
