@@ -4,8 +4,7 @@
 
 # Homework Exercise
 
-Airflow DAG for JSON Processing
-Scenario
+#### Airflow DAG for JSON Processing Scenario
 Create an Airflow DAG to fetch a JSON file from a GCP bucket, process it based on a flag, branch into different paths, modify the file differently in each branch, and upload the modified file back to the GCP bucket. Additionally, include steps for validating the JSON schema and cleaning the data, along with error handling, logging, and monitoring mechanisms.
 #### Requirements
 1. Fetch a JSON file from a GCP bucket.
