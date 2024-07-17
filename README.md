@@ -91,7 +91,6 @@ Environment Setup Guide
 6. Disable example dags by editing the docker-compose.yaml file or in any other way.
 7. Go to http://localhost:8080/. You should be able to access the Airflow web application.
 
-The setup installation should take up to 1 hour and is not part of the test. If you have any issues setting up the environment please contact us.
 
 References:
 Apache Airflow - https://airflow.apache.org/docs/apache-airflow/2.5.1/tutorial/index.html
