@@ -81,6 +81,41 @@ Sample JSON Data
 }
 ```
 
+### Authenticating to Seetree Bucket
+
+To connect to the Seetree bucket, follow these steps to authenticate using the provided secret credentials JSON file:
+
+1. **Obtain Credentials:**
+   - You will receive a JSON file containing your service account credentials via email.
+
+2. **Authenticate with Google Cloud:**
+   - Open a terminal and use the `gcloud` command-line tool to authenticate using the service account credentials. Run the following command:
+     ```bash
+     gcloud auth activate-service-account --key-file=path/to/your/credentials-file.json
+     ```
+   - Replace `path/to/your/credentials-file.json` with the path to the JSON file you received.
+
+3. **Verify Authentication:**
+   - Ensure that your authentication is successful by running:
+     ```bash
+     gcloud auth list
+     ```
+   - This should list the active account and indicate that the service account is in use.
+
+4. **Access the Bucket:**
+   - Use `gsutil` to read from or write to the Seetree bucket. For example, to copy a file from your local filesystem to the bucket, use:
+     ```bash
+     gsutil cp local-file.json gs://your-seetree-bucket/
+     ```
+   - To download a file from the bucket to your local filesystem, use:
+     ```bash
+     gsutil cp gs://your-seetree-bucket/remote-file.json local-file.json
+     ```
+
+   - Replace `your-seetree-bucket` with the name of the Seetree bucket.
+
+These steps will set up authentication for accessing and managing files in the Seetree bucket.
+
 #### Input
 1. The workflow should be triggered by REST API POST request 
 https://airflow.apache.org/docs/apache-airflow/stable/stable-rest-api-ref.html
