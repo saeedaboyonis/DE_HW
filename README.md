@@ -136,6 +136,7 @@ Example of POST request using curl:
 1. Code implementing the algorithm you developed, in a programming language of your choice. 
 on this repository, in the `src` directory (open a PR for submission).
     - The code should be well-documented and easy to read, and should include instructions for running the code.
+2. Upload your modified output JSON files to a folder named after yourself in the your-seetree-bucket.
 
 3. A document describing the assumptions, approach, and results (including intermediate results of your choice):
    - Please dedicate no more than one page to describing the assumptions and solution approach.
