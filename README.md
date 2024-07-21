@@ -1,6 +1,6 @@
 ![seetree](./assets/seetree_logo.png)
 
-# Submission Deadline: Jul 23st, 2024
+# Submission Deadline: Jul 27st, 2024
 
 # Homework Exercise
 
