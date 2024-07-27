@@ -1,0 +1,38 @@
+# IDE and editor configurations
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+.history
+
+# OS and system files
+.DS_Store
+Thumbs.db
+
+# Python environment files
+.venv/
+venv/
+.python-version
+
+# Airflow and project-specific configurations
+/.env
+/.env.local.user
+
+# Data and logs
+db/
+logs/
+logs/*.log
+data/
+data/*
+
+# Compiled files and caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Variables and credentials
+variables.json
+credentials/seetree-proto-dev-8ec55e2c12e4.json

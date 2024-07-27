@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "de_hw"
+version = "0.1.0"
+description = "A sample Airflow project for DE HW"
+authors = ["Andrii <your.email@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+apache-airflow = "^2.5.1"
+apache-airflow-providers-google = "^8.0.0"
+pyarrow = "^6.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,6 @@
+{
+    "de_hw_bucket_name": "homework-exercise",
+    "de_hw_connection_id": "de_hw",
+    "STORAGE_ROOT_PATH": "/opt/airflow",
+    "TEMPORARY_FOLDER_PATH": "data/temporary"
+}
